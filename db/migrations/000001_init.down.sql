@@ -1,0 +1,25 @@
+drop trigger if exists trg_roles_keep_builtin on roles;
+drop trigger if exists trg_user_roles_keep_super_admin on user_roles;
+drop trigger if exists trg_users_delete_keep_super_admin on users;
+drop trigger if exists trg_users_keep_super_admin on users;
+drop function if exists prevent_builtin_role_delete();
+drop function if exists ensure_active_super_admin();
+
+drop table if exists user_identities;
+drop table if exists profiles;
+drop table if exists view_daily;
+drop table if exists friend_links;
+drop table if exists comments;
+drop table if exists site_settings;
+drop table if exists assets;
+drop table if exists post_tags;
+drop table if exists posts;
+drop table if exists tags;
+drop table if exists categories;
+drop table if exists sessions;
+drop table if exists menus;
+drop table if exists user_roles;
+drop table if exists role_permissions;
+drop table if exists permissions;
+drop table if exists roles;
+drop table if exists users;
